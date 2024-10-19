@@ -13,6 +13,7 @@
 *::before {
   box-sizing: border-box;
 }
+
 /* Typography */
 html {
   /* 62.5% of 16px = 10px */
@@ -363,4 +364,21 @@ a {
   .plan__description {
     font-size: 1.7rem;
   }
+}
+
+/* Media */
+.media {
+  display: flex;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
+
+.media__title {
+  margin-top: 0;
+}
+
+.media__body {
+  padding: 0 2rem;
 }
