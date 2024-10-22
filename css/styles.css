@@ -569,3 +569,40 @@ a {
   opacity: 1;
   transition: all 0.3s;
 }
+
+/* Blocks */
+.block {
+  --padding--vertical: 6rem;
+  padding: var(--padding--vertical) 2rem;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block--dark {
+  background: #000;
+  color: #fff;
+}
+.block--dark .block__heading {
+  color: #fff;
+}
+
+.block--skewed--right {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  padding: calc(var(--padding--vertical) + 4rem) 2rem;
+}
+
+.block--skewed--left {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  padding: calc(var(--padding--vertical) + 4rem) 2rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
