@@ -14,26 +14,18 @@
     <title>Document</title>
   </head>
   <body style="padding: 5rem">
-    <section class="block container">
-      <header class="block__header">
-        <h3 class="block__heading">Heading</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rem
-          fugiat hic ab veniam consequatur fugit nihil impedit ratione
-          dignissimos.
-        </p>
-      </header>
-    </section>
-    <section class="block block--dark block--skewed--left">
-      <header class="block__header">
-        <h3 class="block__heading">Heading</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rem
-          fugiat hic ab veniam consequatur fugit nihil impedit ratione
-          dignissimos.
-        </p>
-      </header>
-    </section>
+    <nav class="nav collapsible">
+      <a href="/"><img src="images/logo.svg" alt="" /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPN</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
     <script src="js/main.js"></script>
   </body>
 </html>

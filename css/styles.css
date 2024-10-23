@@ -567,7 +567,7 @@ a {
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
-  transition: all 0.3s;
+  transition: max-height 0.7s;
 }
 
 /* Blocks */
@@ -605,4 +605,59 @@ a {
 .container {
   max-width: 1140px;
   margin: auto;
+}
+
+/* Navigation Bar */
+.nav {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 0.5px solid #222;
+}
+
+.nav__item > a {
+  color: #d2d0db;
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav__toggler {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    max-height: 100%;
+  }
+
+  .nav__item {
+    border: 0;
+  }
 }
