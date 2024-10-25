@@ -208,6 +208,13 @@ a {
   white-space: nowrap;
 }
 
+.btn .icon {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 .btn--primary {
   background: var(--color-primary);
   color: #fff;
@@ -264,12 +271,12 @@ a {
 
 /* Inputs */
 .input {
-  padding: 1.5rem 2.5rem;
-  border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  outline: 0;
+  border: 1px solid var(--color-border);
   color: var(--color-headings);
   font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 2.5rem;
 }
 
 ::placeholder {
@@ -278,14 +285,14 @@ a {
 
 .input-group {
   border: 1px solid var(--color-border);
-  display: flex;
   border-radius: var(--border-radius);
+  display: flex;
 }
 
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -686,5 +693,29 @@ nav.collapsible--expanded .nav__toggler {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* Block Domain */
+.block--domain .input-group {
+  margin: 6rem 0;
+  border: 0;
+  box-shadow: 0 0 30px 20px #e6ebee;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  font-weight: 600;
+  font-size: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
