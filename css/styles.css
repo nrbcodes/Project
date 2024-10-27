@@ -46,6 +46,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 p {
@@ -137,7 +138,6 @@ a {
 .list {
   list-style: none;
   padding: 0;
-  color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -148,6 +148,7 @@ a {
 .list--tick {
   list-style-image: url(../images/tick.svg);
   padding-left: 3rem;
+  color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -422,6 +423,7 @@ a {
 
 .media__title {
   margin-top: 0;
+  color: #fff;
 }
 
 .media__body {
@@ -616,19 +618,21 @@ a {
 
 .block--dark {
   background: #000;
-  color: #fff;
+  color: #7b858b;
 }
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: #fff;
 }
 
 .block--skewed--right {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
   padding: calc(var(--padding--vertical) + 4rem) 2rem;
 }
 
 .block--skewed--left {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   padding: calc(var(--padding--vertical) + 4rem) 2rem;
 }
 
@@ -704,10 +708,6 @@ nav.collapsible--expanded .nav__toggler {
   width: 100%;
 }
 
-.hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-}
-
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 0;
@@ -765,8 +765,29 @@ nav.collapsible--expanded .nav__toggler {
 .feature__image {
   width: 100%;
 }
+
 @media screen and (min-width: 786px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+}
+
+/* Showcase block */
+.block-showcase__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 786px) {
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    justify-self: end;
+  }
+
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
   }
 }
