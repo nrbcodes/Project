@@ -751,3 +751,22 @@ nav.collapsible--expanded .nav__toggler {
 .block-plans .grid {
   grid-gap: 6rem;
 }
+
+/* Features Block */
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature__heading {
+  margin: 1rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+@media screen and (min-width: 786px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
