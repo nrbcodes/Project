@@ -53,7 +53,7 @@ p {
   margin-top: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 786px) {
   body {
     font-size: 1.8rem;
   }
@@ -789,5 +789,67 @@ nav.collapsible--expanded .nav__toggler {
   .block-showcase__image > img {
     width: auto;
     max-width: 700px;
+  }
+}
+
+/* Footer */
+.footer {
+  background: #232323;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #323232;
+}
+
+.footer .collapsible__heading {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.footer a {
+  color: #777;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer__image {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer__image > img {
+  width: 100%;
+  max-width: 220px;
+}
+
+@media screen and (min-width: 786px) {
+  .footer .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .footer .collapsible__heading {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .footer__image {
+    order: -1;
+  }
+
+  .footer__section {
+    border-bottom: 0;
   }
 }
