@@ -294,6 +294,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -353,10 +354,6 @@ a {
   color: #fff;
   font-weight: 500;
   font-size: 2.4rem;
-}
-
-.plan--popular {
-  transform: scale(1.1);
 }
 
 .plan__price {
@@ -501,6 +498,7 @@ a {
 
 .testimonial__image--container {
   position: relative;
+  margin: 0 2rem;
 }
 
 .testimonial__image--container .icon-container {
@@ -533,6 +531,10 @@ a {
 .callout {
   border-radius: 5px;
   padding: 2rem;
+}
+
+.callout__signup {
+  transform: translateY(5rem);
 }
 
 .callout--primary {
@@ -638,7 +640,7 @@ a {
 
 .container {
   max-width: 1140px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 /* Navigation Bar */
@@ -689,6 +691,7 @@ nav.collapsible--expanded .nav__toggler {
     width: auto;
     display: flex;
     max-height: 100%;
+    opacity: 1;
   }
 
   .nav__item {
@@ -720,20 +723,24 @@ nav.collapsible--expanded .nav__toggler {
 
 /* Block Domain */
 .block--domain .input-group {
-  margin: 6rem 0;
+  margin: 4rem auto;
   border: 0;
+  max-width: 670px;
   box-shadow: 0 0 30px 20px #e6ebee;
 }
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  color: var(--color-headings);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 6rem);
   justify-items: center;
   font-weight: 600;
+  white-space: nowrap;
   font-size: 2rem;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
+  gap: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -749,7 +756,7 @@ nav.collapsible--expanded .nav__toggler {
 }
 
 .block-plans .grid {
-  grid-gap: 6rem;
+  grid-gap: 8rem 4rem;
 }
 
 /* Features Block */
